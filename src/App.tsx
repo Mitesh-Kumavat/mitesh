@@ -40,7 +40,7 @@ export const App: React.FC = () => {
           Coming Soon
         </h1>
         <p className="text-xl md:text-2xl mb-12 animate-slide-up">
-          We're working hard to bring you something amazing!
+          I'm working on my portfolio website currently!
         </p>
         <div className="flex justify-center space-x-4 mb-12">
           {[
@@ -77,7 +77,7 @@ export const App: React.FC = () => {
         </form>
       </div>
       <footer className="mt-16 text-center">
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Mitesh Kumavat. All rights reserved.</p>
       </footer>
       <style>{`
         @keyframes fadeIn {
