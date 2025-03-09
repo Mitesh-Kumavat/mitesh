@@ -5,7 +5,6 @@ export const App: React.FC = () => {
   const [hours, setHours] = useState<number>(0);
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
-  const [email, setEmail] = useState<string>('');
 
   useEffect(() => {
     const countdownDate = new Date("2025-06-30T00:00:00").getTime();
@@ -25,13 +24,6 @@ export const App: React.FC = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle email submission here
-    console.log('Email submitted:', email);
-    setEmail('');
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white flex flex-col justify-center items-center p-4">
